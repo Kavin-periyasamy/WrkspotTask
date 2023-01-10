@@ -9,7 +9,7 @@ public class UsingStreams {
             + "review/discuss on test case scenarios for HK dashboard cards ";
     public static void main(String[] args)
     {
-        String[] arr=input.split("\\s");
+        String[] arr=input.split("\u0020");
         List<String> inputs= Arrays.asList(arr);
         Comparator<String> result=(s1, s2)->(s2.length() - s1.length());
         inputs.stream().sorted(result).forEach(System.out::println);
