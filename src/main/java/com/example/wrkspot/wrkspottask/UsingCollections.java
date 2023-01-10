@@ -18,4 +18,5 @@ public class UsingCollections {
             System.out.print(word+" ");
         }
     }
+
 }
