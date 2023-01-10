@@ -10,7 +10,7 @@ public class UsingCollections {
             "review/discuss on test case scenarios for HK dashboard cards ";
     public static void main(String[] args)
     {
-        String[] arr=inputText.split("\\s");
+        String[] arr=inputText.split("\u0020");
         List<String> words = Arrays.asList(arr);
         Collections.sort(words, Comparator.comparingInt(String::length).reversed());
         for(String word:words)
